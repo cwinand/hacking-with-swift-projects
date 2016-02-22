@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="499-42-d0g">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="dEh-eV-dlg">
+            <objects>
+                <viewController id="499-42-d0g" customClass="GameViewController" customModule="Project29TV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TiC-Vw-u93"/>
+                        <viewControllerLayoutGuide type="bottom" id="3TX-uQ-fmp"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="weF-Pa-zaM" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MtP-js-TKV">
+                                <rect key="frame" x="1195" y="8" width="350" height="66"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.1940458414122247" green="0.45009140072486686" blue="1" alpha="0.4920489804964539" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Wt0-my-TGq"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="velocityChanged:" destination="499-42-d0g" eventType="editingDidEnd" id="CwS-pV-j4e"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BjA-qf-ZR7">
+                                <rect key="frame" x="753" y="8" width="350" height="66"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.1940458414" green="0.45009140069999998" blue="1" alpha="0.49204898050000001" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="5Zs-Jo-XYw"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="angleChanged:" destination="499-42-d0g" eventType="editingDidEnd" id="CbH-i1-S8v"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Angle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="do3-3h-Hkv">
+                                <rect key="frame" x="1033" y="87" width="70" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Velocity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCn-lm-mKe">
+                                <rect key="frame" x="1455" y="87" width="90" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;&lt;&lt; Player One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXU-ee-GXp">
+                                <rect key="frame" x="89" y="-12" width="350" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8IH-ny-C1v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZI-xM-KGL">
+                                <rect key="frame" x="1694" y="8" width="206" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="XUa-av-C9B"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Launch">
+                                    <color key="titleColor" red="1" green="0.1996576237571982" blue="0.2360106393398228" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="launch:" destination="499-42-d0g" eventType="primaryActionTriggered" id="ge5-gF-oNG"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="68X-1y-Tnv">
+                                <rect key="frame" x="1147" y="281" width="576" height="70"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                <segments>
+                                    <segment title="0"/>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                    <segment title="9"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="WZI-xM-KGL" firstAttribute="leading" secondItem="MtP-js-TKV" secondAttribute="trailing" constant="149" id="5iq-vv-rhF"/>
+                            <constraint firstItem="mCn-lm-mKe" firstAttribute="bottom" secondItem="WZI-xM-KGL" secondAttribute="bottom" id="6D8-e0-cwe"/>
+                            <constraint firstItem="BjA-qf-ZR7" firstAttribute="top" secondItem="WZI-xM-KGL" secondAttribute="top" id="CFI-xO-TnD"/>
+                            <constraint firstItem="RXU-ee-GXp" firstAttribute="width" secondItem="BjA-qf-ZR7" secondAttribute="width" id="EWR-3l-LRP"/>
+                            <constraint firstItem="WZI-xM-KGL" firstAttribute="top" secondItem="TiC-Vw-u93" secondAttribute="bottom" constant="8" id="HbZ-ez-QYe"/>
+                            <constraint firstItem="RXU-ee-GXp" firstAttribute="top" secondItem="TiC-Vw-u93" secondAttribute="bottom" constant="-12" id="MFc-az-T5S"/>
+                            <constraint firstItem="RXU-ee-GXp" firstAttribute="leading" secondItem="weF-Pa-zaM" secondAttribute="leadingMargin" constant="69" id="NdY-f9-cTI"/>
+                            <constraint firstItem="MtP-js-TKV" firstAttribute="width" secondItem="BjA-qf-ZR7" secondAttribute="width" id="Oha-kH-VpV"/>
+                            <constraint firstItem="do3-3h-Hkv" firstAttribute="bottom" secondItem="WZI-xM-KGL" secondAttribute="bottom" id="WMB-l9-keP"/>
+                            <constraint firstItem="WZI-xM-KGL" firstAttribute="trailing" secondItem="weF-Pa-zaM" secondAttribute="trailingMargin" id="dfR-HM-PNR"/>
+                            <constraint firstItem="MtP-js-TKV" firstAttribute="height" secondItem="BjA-qf-ZR7" secondAttribute="height" id="i4K-WV-1Zz"/>
+                            <constraint firstItem="mCn-lm-mKe" firstAttribute="trailing" secondItem="MtP-js-TKV" secondAttribute="trailing" id="imS-o5-z3I"/>
+                            <constraint firstItem="MtP-js-TKV" firstAttribute="leading" secondItem="BjA-qf-ZR7" secondAttribute="trailing" constant="92" id="ivx-bn-ARE"/>
+                            <constraint firstItem="MtP-js-TKV" firstAttribute="top" secondItem="WZI-xM-KGL" secondAttribute="top" id="kid-OH-MVp"/>
+                            <constraint firstItem="do3-3h-Hkv" firstAttribute="trailing" secondItem="BjA-qf-ZR7" secondAttribute="trailing" id="krh-SR-P13"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="angleField" destination="BjA-qf-ZR7" id="aBn-1a-aJC"/>
+                        <outlet property="angleLabel" destination="do3-3h-Hkv" id="AzZ-qw-hGo"/>
+                        <outlet property="launchButton" destination="WZI-xM-KGL" id="lD6-1P-qAd"/>
+                        <outlet property="playerNumber" destination="RXU-ee-GXp" id="dMM-6S-prW"/>
+                        <outlet property="velocityField" destination="MtP-js-TKV" id="q0v-xU-aaA"/>
+                        <outlet property="velocityLabel" destination="mCn-lm-mKe" id="BiV-uT-QHg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFW-Nd-Df7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="651" y="554"/>
+        </scene>
+    </scenes>
+</document>
